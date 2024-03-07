@@ -2,6 +2,8 @@
 
 An open-world game inspired by Project Zomboid
 
+## Motivation
+
 Project Zomboid is a nice game but has very bad performance and hard mechanics, we plan to make an open-source alternative.
 
 ## Goals
