@@ -30,3 +30,5 @@ Once you join, request for an invite to the Matrix space.
 ## Donate
 
 If you want to support our work, consider a donation, every amount is important.
+
+- [Patreon](https://www.patreon.com/foss_supremacy)
