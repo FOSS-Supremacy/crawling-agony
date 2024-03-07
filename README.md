@@ -14,6 +14,12 @@ Project Zomboid is a nice game but has very bad performance and hard mechanics, 
 - Support modding
 - Add natural disasters
 
+## Chat
+
+You can join in our discussion rooms on Matrix [here](https://matrix.to/#/#foss-supremacy-join:matrix.org).
+
+Once you join, request for an invite to the Matrix space.
+
 ## How To Contribute
 
 - Download the [Godot Engine](https://godotengine.org/) (normal variant, not C#)
