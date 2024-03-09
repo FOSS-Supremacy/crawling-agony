@@ -18,7 +18,9 @@ Project Zomboid is a nice game but has very bad performance and hard mechanics, 
 
 ## Chat
 
-You can join in our discussion rooms on Matrix [here](https://matrix.to/#/#foss-supremacy-join:matrix.org).
+We have a Discord server for community discussions, you can join [here](https://discord.gg/d9ca4U64H4).
+
+The developer discussions happen on Matrix, you can join [here](https://matrix.to/#/#foss-supremacy-join:matrix.org).
 
 Once you join, request for an invite to the Matrix space.
 
