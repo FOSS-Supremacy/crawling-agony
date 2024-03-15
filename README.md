@@ -16,6 +16,10 @@ Project Zomboid is a nice game but has very bad performance and hard mechanics, 
 - Support modding
 - Add natural disasters
 
+## Game Design
+
+- [Game Design](gdd.md)
+
 ## Chat
 
 You can join in our Matrix [here](https://matrix.to/#/#foss-supremacy-join:matrix.org).
