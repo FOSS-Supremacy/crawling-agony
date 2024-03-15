@@ -28,6 +28,16 @@ You can join in our Matrix [here](https://matrix.to/#/#foss-supremacy-join:matri
 
 You can also join in our Discord server [here](https://discord.gg/d9ca4U64H4).
 
+## Requests and Suggestions
+
+### Features
+
+If you have a feature request, open an issue with "(Feature request)" before the title.
+
+### Suggestion
+
+If you have a suggestion, open an issue with "(Suggestion)" before the title.
+
 ## How To Contribute
 
 - Download the [Godot Engine](https://godotengine.org/) (normal variant, not C#)
