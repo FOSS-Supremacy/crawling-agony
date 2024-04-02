@@ -38,9 +38,20 @@ If you have a feature request, open an issue with "(Feature request)" before the
 
 If you have a suggestion, open an issue with "(Suggestion)" before the title.
 
+## How to Clone and Build
+
+- Download the repository and game assets
+
+```sh
+git clone --recursive https://github.com/FOSS-Supremacy/crawling-agony
+```
+
+- Download the [Godot Engine](https://godotengine.org/) 4.x version (normal variant, not C#)
+- Export the executable to your operating system
+
 ## How To Contribute
 
-- Download the [Godot Engine](https://godotengine.org/) (normal variant, not C#)
+- Download the [Godot Engine](https://godotengine.org/) 4.x version (normal variant, not C#)
 - Verify the open issues and select some item to work on
 - Once ready, send a pull request (if you are adding commits on the PR branch, mark it as draft status)
 - We don't accept C# code
