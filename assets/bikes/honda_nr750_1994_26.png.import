@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bojvg2o7wuffm"
+path.s3tc="res://.godot/imported/honda_nr750_1994_26.png-f31a76e1c23bd795292ec5efc7ac36cf.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "6470c3951f49324d0de00591af70a42e"
+}
+
+[deps]
+
+source_file="res://assets/bikes/honda_nr750_1994_26.png"
+dest_files=["res://.godot/imported/honda_nr750_1994_26.png-f31a76e1c23bd795292ec5efc7ac36cf.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

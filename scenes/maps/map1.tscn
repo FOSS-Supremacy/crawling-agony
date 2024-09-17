@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cawsy5flqappm"]
+
+[ext_resource type="PackedScene" uid="uid://dsojkacs81887" path="res://assets/maps/map1/map-1.gltf" id="1_haic8"]
+
+[node name="map1" instance=ExtResource("1_haic8")]

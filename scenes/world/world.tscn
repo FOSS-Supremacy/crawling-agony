@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://1d8h7r1pvaps"]
+
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_62eji"]
+[ext_resource type="PackedScene" uid="uid://cawsy5flqappm" path="res://scenes/maps/map1.tscn" id="2_nktj0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3vx5w"]
+size = Vector3(96.0477, 0, 116.424)
+
+[node name="world" type="Node3D"]
+script = ExtResource("1_62eji")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0174524, 0.999848, 0, -0.999848, -0.0174524, 0, 11.2648, 0)
+shadow_enabled = true
+
+[node name="moon" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0174524, 0.999848, 0, -0.999848, -0.0174524, 0, 11.2648, 0)
+visible = false
+light_color = Color(0, 0.333955, 0.333955, 1)
+shadow_enabled = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="map1" parent="StaticBody3D" instance=ExtResource("2_nktj0")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02386, 0, -1.21216)
+shape = SubResource("BoxShape3D_3vx5w")

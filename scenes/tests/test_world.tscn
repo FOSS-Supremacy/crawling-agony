@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://i2utbyyl6ju1"]
+
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_7kcrm"]
+[ext_resource type="Environment" uid="uid://cs0m1jhlpv3rp" path="res://scenes/world/day.tres" id="2_hfg8l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fcmac"]
+albedo_color = Color(0.344076, 0.344076, 0.344076, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aqhx6"]
+material = SubResource("StandardMaterial3D_fcmac")
+size = Vector3(20, 1, 20)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7rwwr"]
+data = PackedVector3Array(-10, 0.5, 10, 10, 0.5, 10, -10, -0.5, 10, 10, 0.5, 10, 10, -0.5, 10, -10, -0.5, 10, 10, 0.5, -10, -10, 0.5, -10, 10, -0.5, -10, -10, 0.5, -10, -10, -0.5, -10, 10, -0.5, -10, 10, 0.5, 10, 10, 0.5, -10, 10, -0.5, 10, 10, 0.5, -10, 10, -0.5, -10, 10, -0.5, 10, -10, 0.5, -10, -10, 0.5, 10, -10, -0.5, -10, -10, 0.5, 10, -10, -0.5, 10, -10, -0.5, -10, 10, 0.5, 10, -10, 0.5, 10, 10, 0.5, -10, -10, 0.5, 10, -10, 0.5, -10, 10, 0.5, -10, -10, -0.5, 10, 10, -0.5, 10, -10, -0.5, -10, 10, -0.5, 10, 10, -0.5, -10, -10, -0.5, -10)
+
+[node name="world" type="Node3D"]
+script = ExtResource("1_7kcrm")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("2_hfg8l")
+
+[node name="sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0174524, 0.999848, 0, -0.999848, -0.0174524, 0, 11.2648, 0)
+shadow_enabled = true
+
+[node name="moon" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0174524, 0.999848, 0, -0.999848, -0.0174524, 0, 11.2648, 0)
+visible = false
+light_color = Color(0, 0.333955, 0.333955, 1)
+shadow_enabled = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_aqhx6")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_7rwwr")

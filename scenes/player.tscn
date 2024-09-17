@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci2k4eganebbs"]
+
+[ext_resource type="PackedScene" uid="uid://cr2ersq7g6q6f" path="res://scenes/player/ThirdPersonPlayer.tscn" id="1_4knfc"]
+
+[node name="player" type="Node3D"]
+
+[node name="ThirdPersonPlayer" parent="." instance=ExtResource("1_4knfc")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
