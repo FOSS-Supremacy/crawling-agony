@@ -20,8 +20,8 @@ const ANIMATION_BLEND : float = 7.0
 
 func _physics_process(delta):
 	var move_direction : Vector3 = Vector3.ZERO
-	move_direction.x = Input.get_action_strength("player_right") - Input.get_action_strength("player_left")
-	move_direction.z = Input.get_action_strength("player_backward") - Input.get_action_strength("player_forward")
+	move_direction.x = Input.get_action_strength("player_backward") - Input.get_action_strength("player_forward")
+	move_direction.z = Input.get_action_strength("player_left") - Input.get_action_strength("player_right")
 #	move_direction = move_direction + Vector3.UP
 	
 	velocity.y -= gravity * delta
